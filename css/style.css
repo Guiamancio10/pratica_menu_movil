@@ -1,0 +1,61 @@
+/* Fonts */
+@font-face {
+    font-family: ;
+    src: url(fonts/.woff2) format('woff2');
+}
+/* variables */
+.root{
+    --color-primary: #f9f9f9;
+    --color-secondary: #333;
+}
+/* general */
+html{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: black;
+    background-color: var(--color-secondary);
+}
+body{}
+
+#container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    display: grid;
+    grid-template-rows: 100px auto auto;
+    
+}
+
+/* links */
+header, main, footer {
+    padding: 1rem;
+}
+
+/* header */
+header{
+    height: 100px;
+    
+}
+    
+
+/* main */
+main{
+
+    &__banner{
+        display: none;
+        @media screen and (min-width: 768px){
+            display: block;
+            height: 500px;
+            object-fit: cover;
+            object-position: center;
+            
+        }
+    }
+}
+
+/* footer */
+footer{
+
+}
+
